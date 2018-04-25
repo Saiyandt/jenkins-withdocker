@@ -7,13 +7,13 @@ However, there is an easy workaround: mount the host machine's Docker socket in 
 Your container still needs compatible Docker client binaries in it, but I have found this to be acceptable for all my use cases.
 
 The version using my prebuilt image (the docker build is in this url: ):
-
+```
     docker run \
      -p 8080:8080 \
      -v /var/run/docker.sock:/var/run/docker.sock \
      --name jenkins \
      jenkins-withdocker:1
-
+```
 The guide below is for Jenkins, but you can apply the same logic to any other build server.
 
 Building Docker containers with Jenkins inside a container
