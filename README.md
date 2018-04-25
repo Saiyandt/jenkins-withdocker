@@ -45,7 +45,7 @@ Because the official Jenkins image is based on Debian 9, we can use apt to insta
        stable" && \
     apt-get update && \
     apt-get -y install docker-ce
-
+```
 Note: The Docker daemon running on your host machine must be compatible with the version of client binaries you are installing. To verify the version, run docker version on your host machine.
 
 -> Your Jenkins container should now have a functioning Docker installation. Verify by running:
